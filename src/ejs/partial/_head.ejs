@@ -8,13 +8,18 @@
         description: 'gulpを使用した最低限のフレームワークです。',
         author: 'アルム＝バンド',
         copyright: 2020,
-        themecolor: '#ccc'
+        themecolor: '#ccc',
+        url: 'https://localhost:3000/',
+        ogp: {
+            card: 'photo',
+            account: 'Bredtn_1et',
+            type: 'website',
+            image: 'img/hinomotogo.png'
+        }
     }
 %>    <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="robots" content="noindex,nofollow">
 
     <title><%= parameters.title %> - <%= parameters.sitename %></title>
     <meta name="description" content="<%= parameters.description %>">
@@ -23,6 +28,15 @@
     <link href="./apple-touch-icon.png" rel="apple-touch-icon">
     <meta name="theme-color" content="<%= parameters.themecolor %>">
 
+    <meta name="twitter:card" content="<%= parameters.ogp.card %>">
+    <meta name="twitter:site" content="@<%= parameters.ogp.account %>">
+    <meta property="og:type" content="<%= parameters.ogp.type %>">
+    <meta name="og:title" content="<%= parameters.title %>">
+    <meta name="og:site_name" content="<%= parameters.sitename %>">
+    <meta name="og:description" content="<%= parameters.description %>">
+    <meta name="og:image" content="<%= parameters.url %><%= parameters.ogp.image %>">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="./css/index.css" rel="stylesheet">
 </head>
