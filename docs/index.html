@@ -1,6 +1,37 @@
-<%- include('partial/_head') %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Ghastly Dream</title>
+    <meta name="description" content="テキストの文字色と枠線の色が同色の場合の縁取りのテスト">
+    <meta name="author" content="アルム＝バンド">
+
+    <link href="./apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#ccc">
+
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:site" content="@Bredtn_1et">
+    <meta property="og:type" content="website">
+    <meta name="og:title" content="Home">
+    <meta name="og:site_name" content="Ghastly Dream">
+    <meta name="og:description" content="テキストの文字色と枠線の色が同色の場合の縁取りのテスト">
+    <meta name="og:image" content="scrunchy56.starfree.jp/text-facing-ghasty-dream/img/eyecatch.jpg">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
 <body>
-<%- include('partial/_header') %>
+<header class="l-header o-header">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand my-0" href="./"><h1 class="sitename">Ghastly Dream<small class="d-block d-xl-inline mt-2 mt-xl-0 ml-xl-3">テキストの文字色と枠線の色が同色の場合の縁取りのテスト</small></h1></a>
+        </div>
+    </nav>
+</header>
 <main class="l-main o-main">
     <section class="container py-5">
         <h2>このページについて</h2>
@@ -31,7 +62,7 @@
         </pre>
         <p>で文字色と<code>text-shadow</code>を指定した場合。</p>
         <div class="c-eyecatch c-eyecatch_textShadow">
-            <h3 class="c-eyecatchCopy c-eyecatch_textShadowCopy"><%= parameters.sitename %></h3>
+            <h3 class="c-eyecatchCopy c-eyecatch_textShadowCopy">Ghastly Dream</h3>
         </div>
         <p>文字色と枠線の色が同化してしまいました……。</p>
     </section>
@@ -45,7 +76,7 @@
         </code></pre>
         <p>で指定しました。</p>
         <div class="c-eyecatch c-eyecatch_textStroke">
-            <h3 class="c-eyecatchCopy c-eyecatch_textStrokeCopy"><%= parameters.sitename %></h3>
+            <h3 class="c-eyecatchCopy c-eyecatch_textStrokeCopy">Ghastly Dream</h3>
         </div>
         <p>動作的に問題なさそう(Firefox含めて)です。</p>
         <p>ただし、<code>text-stroke: 1px $main-color;</code>ではダメで、ベンダープレフィックスを付けないと動作しません(Chrome含めて)でした。よって次点。</p>
@@ -73,7 +104,7 @@
         <div class="c-eyecatch c-eyecatch_svg">
             <h3 class="c-eyecatchCopy c-eyecatch_svgCopy">
                 <svg>
-                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"><%= parameters.sitename %></text>
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central">Ghastly Dream</text>
                 </svg>
             </h3>
         </div>
@@ -89,7 +120,12 @@
         </ul>
     </section>
 </main>
-<%- include('partial/_footer') %>
-<%- include('partial/_js_loader') %>
+<footer class="l-footer o-footer w-100">
+    <small class="d-block pt-2 pb-3 text-center">© 2020- アルム＝バンド.</small>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+
 </body>
 </html>

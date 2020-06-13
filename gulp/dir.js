@@ -6,8 +6,8 @@ module.exports = {
         js         : './src/js'
     },
     dist: {
-        html       : './dist',
-        css        : './dist/css',
-        js         : './dist/js'
+        html       : './docs',
+        css        : './docs/css',
+        js         : './docs/js'
     }
 };

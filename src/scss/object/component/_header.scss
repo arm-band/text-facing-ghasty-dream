@@ -2,6 +2,13 @@
 
 .o-header {
     .sitename {
-        color: $color;
+        color: $main-color;
+        small {
+            font-size: 1rem;
+            &::before {
+                content: "～";
+                margin-right: 0.5rem;
+            }
+        }
     }
 }

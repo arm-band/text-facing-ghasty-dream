@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.c-eyecatch {
+    height: 406px;
+    background: {
+        image: url('../img/eyecatch.jpg');
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Copy {
+        font-size: 3rem;
+    }
+    &_textShadow {
+        &Copy {
+            color: rgba($main-color, 0.6);
+            text-shadow: 1px 1px 0 $main-color,-1px 1px 0 $main-color,1px -1px 0 $main-color,-1px -1px 0 $main-color;
+        }
+    }
+    &_textStroke {
+        &Copy {
+            color: rgba($main-color, 0.6);
+            -webkit-text-stroke: 1px $main-color;
+        }
+    }
+    &_svg {
+        &Copy {
+            svg {
+                width: 100%;
+                height: auto;
+                overflow: visible;
+            }
+            text {
+                fill: rgba($main-color, 0.6);
+                stroke: $main-color;
+                stroke: {
+                    width: 1;
+                    linejoin: round;
+                }
+            }
+        }
+    }
+}

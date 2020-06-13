@@ -3,4 +3,15 @@
 .o-main {
     background-color: $bg-color;
     color: $color;
+    .vivaldi {
+        &::before {
+            content: "v";
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit;
+            font-weight: bold;
+        }
+    }
 }
